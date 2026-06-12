@@ -1,0 +1,30 @@
+Dataset Summary
+
+- Dataset contains 20,640 housing records.
+- There are 8 input features and 1 target variable (Price).
+- No missing values are present.
+- All features are numerical.
+- House prices range from 0.15 to 5.00.
+
+Observation:
+House prices tend to increase as median income increases, indicating a strong positive relationship.
+
+Observation:
+Average rooms show a weak positive relationship with house prices, with several outliers present.
+
+MAE = 0.5332
+
+On average, the predicted house price differs from the actual price by about 0.53 units.
+
+RMSE = 0.7456
+
+The model's prediction error is approximately 0.75 units, with larger errors penalized more heavily.
+
+R² = 0.5758
+
+The model explains about 57.58% of the variation in house prices.
+
+
+Observation:
+
+Linear Regression and Ridge Regression achieved nearly identical performance on the California Housing dataset. This suggests that regularization did not provide a significant benefit for this dataset.
