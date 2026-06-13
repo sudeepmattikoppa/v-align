@@ -16,6 +16,14 @@ aveoccup = float(input("Average Occupancy: "))
 latitude = float(input("Latitude: "))
 longitude = float(input("Longitude: "))
 
+if latitude < 32.54 or latitude > 41.95:
+    print("Invalid latitude for California dataset so please enter the values between 32.54 to 41.95")
+    exit()
+
+if longitude < -124.35 or longitude > -114.31:
+    print("Invalid longitude for California dataset so please enter the values between -124.35-to-114.31")
+    exit()
+
 data = pd.DataFrame([[
     medinc,
     houseage,
@@ -43,4 +51,4 @@ data_scaled = scaler.transform(data)
 prediction = model.predict(data_scaled)
 
 print("\nPredicted House Price:")
-print(f"${prediction[0]:.2f} (hundreds of thousands of dollars)")6
+print(f"${prediction[0]:.2f} (hundreds of thousands of dollars)")
